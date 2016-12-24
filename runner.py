@@ -42,23 +42,17 @@ def sierpinski(t,levels,size):
         t.setheading(0)
 
 
-def main(levels = 2, size = 480):
+def main(configuration):
     t = Turtle()
     t.speed(10)
     t.up()
-    t.setpos(-size/2,-size/2)
+    t.setpos(-configuration['size']/2,-configuration['size']/2)
     colormode(255)
-    sierpinski(t,levels,size)
+    sierpinski(t,configuration['level'],configuration['size'])
 
-
-if len(sys.argv) == 1:
-    main()
-elif len(sys.argv) == 2:
-    level = int(sys.argv[1])
-    main(level)
-elif len(sys.argv) == 3:
-    level = int(sys.argv[1])
-    size  = int(sys.argv[2])
-    main(level, size)
-else:
-    print("Please read the documentation")
+configuration = {'level': 2, 'size': 480}
+if len(sys.argv) == 2 and sys.argv[1].isdigit():
+    configuration['level'] = int(sys.argv[1])
+if len(sys.argv) == 3 and sys.argv[2].isdigit():
+    configuration['size'] = int(sys.argv[2])
+main(configuration)
