@@ -20,7 +20,7 @@ Note: make sure you follow the right installation guide for your operational sys
 ## Running
 
 ```
-python sierpinski1.1.py
+python runner.py
 ```
 
 ## Contributing
