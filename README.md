@@ -20,8 +20,12 @@ Note: make sure you follow the right installation guide for your operational sys
 ## Running
 
 ```
-python runner.py
+python runner.py fractal_level window_size
 ```
+Note: Both parameters are optional.
+
+**fractal_level**: number of repetitions in this fractal. Default value is 2 and it must be integer.
+**window_size**: size of the Turtle's window in pixels. Default value is 480 and it must be integer.
 
 ## Contributing
 
@@ -29,6 +33,7 @@ python runner.py
 git clone git@github.com:tmmgarcia/frac-turtle.git
 cd frac-turtle/
 git checkout -b your-feature
+git push --set-upstream origin origin/your-feature
 git commit -am "feature description"
 git push origin your-feature   
 # make a pull request

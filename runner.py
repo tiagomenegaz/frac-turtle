@@ -1,8 +1,11 @@
 from turtle import Turtle, colormode
 from random import randint
+import sys
+
 
 def randColor():
     return randint(0,255)
+
 
 def drawTriangle(t,dist):
     t.fillcolor(randColor(),randColor(),randColor())
@@ -17,6 +20,7 @@ def drawTriangle(t,dist):
     t.setheading(0)
     t.end_fill()
     t.up()
+
 
 def sierpinski(t,levels,size):
     if levels == 0:
@@ -37,10 +41,24 @@ def sierpinski(t,levels,size):
         t.forward(half)
         t.setheading(0)
 
-def main(levels, size = 480):
+
+def main(levels = 2, size = 480):
     t = Turtle()
     t.speed(10)
     t.up()
     t.setpos(-size/2,-size/2)
     colormode(255)
     sierpinski(t,levels,size)
+
+
+if len(sys.argv) == 1:
+    main()
+elif len(sys.argv) == 2:
+    level = int(sys.argv[1])
+    main(level)
+elif len(sys.argv) == 3:
+    level = int(sys.argv[1])
+    size  = int(sys.argv[2])
+    main(level, size)
+else:
+    print("Please read the documentation")
