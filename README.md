@@ -1,5 +1,8 @@
 # Python Fractal
 
+![alt tag](https://raw.githubusercontent.com/tmmgarcia/frac-turtle/master/img/result.png)
+
+
 This project consists in creating a [Sierpinski](https://en.wikipedia.org/wiki/Sierpinski_triangle) triangle using Turtle module. Based on the given number of levels, the program makes recursive calls to create a multi level [fractal](https://en.wikipedia.org/wiki/Fractal). This is an exercise developed during [CITS1401](http://teaching.csse.uwa.edu.au/units/CITS1401/) in 2014.
 
 
