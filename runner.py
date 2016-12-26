@@ -51,7 +51,7 @@ def main(configuration):
     sierpinski(t,configuration['level'],configuration['size'])
 
 configuration = {'level': 2, 'size': 480}
-if len(sys.argv) == 2 and sys.argv[1].isdigit():
+if len(sys.argv) >= 2 and sys.argv[1].isdigit():
     configuration['level'] = int(sys.argv[1])
 if len(sys.argv) == 3 and sys.argv[2].isdigit():
     configuration['size'] = int(sys.argv[2])
