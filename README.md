@@ -42,10 +42,6 @@ git push origin your-feature
 # make a pull request
 ```
 
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags).
-
 ## Author
 
 * **Tiago Garcia** - [tmmgarcia](https://github.com/tmmgarcia)
